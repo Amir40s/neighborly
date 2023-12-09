@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.AddEventActivity">
+
+    <include
+        android:id="@+id/include_topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        layout="@layout/back_layout"
+        />
+
+
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:padding="10dp"
+          >
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Event Image"
+              android:textSize="14sp"
+              android:textColor="@color/black"
+              android:padding="5dp"
+              android:textStyle="bold"
+              />
+
+          <ImageView
+              android:id="@+id/event_image"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:src="@drawable/upload"
+              android:padding="10dp"
+              android:background="@drawable/only_border_background"
+              />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Event Title"
+              android:textSize="14sp"
+              android:textColor="@color/black"
+              android:padding="5dp"
+              android:layout_marginTop="10dp"
+              android:textStyle="bold"
+              />
+
+          <EditText
+              android:id="@+id/ed_title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/black"
+              android:hint="Title"
+              android:drawablePadding="15dp"
+              android:drawableTint="@color/gray"
+              android:background="@drawable/edittext_background"
+              android:padding="15dp"
+              android:textColorHint="#A3222121"
+              android:textSize="14sp"
+              android:inputType="textPersonName"
+              />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Event Description"
+              android:textSize="14sp"
+              android:textColor="@color/black"
+              android:padding="5dp"
+              android:layout_marginTop="10dp"
+              android:textStyle="bold"
+              />
+
+          <EditText
+              android:id="@+id/ed_desc"
+              android:layout_width="match_parent"
+              android:layout_height="200dp"
+              android:textColor="@color/black"
+              android:hint="Description"
+              android:drawablePadding="15dp"
+              android:drawableTint="@color/gray"
+              android:textAlignment="textStart"
+              android:layout_gravity="start"
+              android:gravity="start"
+              android:background="@drawable/edittext_background"
+              android:padding="15dp"
+              android:maxLines="10"
+              android:textColorHint="#A3222121"
+              android:textSize="14sp"
+              android:inputType="text"
+              />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Event Location"
+              android:textSize="14sp"
+              android:textColor="@color/black"
+              android:padding="5dp"
+              android:layout_marginTop="10dp"
+              android:textStyle="bold"
+              />
+
+          <EditText
+              android:id="@+id/ed_location"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/black"
+              android:hint="Location"
+              android:drawablePadding="15dp"
+              android:drawableTint="@color/gray"
+              android:background="@drawable/edittext_background"
+              android:padding="15dp"
+              android:textColorHint="#A3222121"
+              android:textSize="14sp"
+              android:inputType="textPersonName"
+              />
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Event Date &amp; Time"
+              android:textSize="14sp"
+              android:textColor="@color/black"
+              android:padding="5dp"
+              android:layout_marginTop="10dp"
+              android:textStyle="bold"
+              />
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:weightSum="3"
+              >
+
+              <TextView
+                  android:id="@+id/tv_date"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/input_background"
+                  android:padding="10dp"
+                  android:layout_weight="1"
+                  android:textSize="12sp"
+                  android:layout_gravity="center"
+                  android:gravity="center|start"
+                  android:layout_marginRight="3dp"
+                  android:text="Select date"
+                  android:drawableEnd="@drawable/ic_date"
+                  android:drawableTint="@color/black"
+                  />
+
+              <TextView
+                  android:id="@+id/tv_time"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@drawable/input_background"
+                  android:padding="10dp"
+                  android:textSize="12sp"
+                  android:layout_weight="2"
+                  android:layout_gravity="center"
+                  android:gravity="center|start"
+                  android:layout_marginLeft="4dp"
+                  android:text="Select Time"
+                  android:drawableEnd="@drawable/ic_time"
+                  android:drawableTint="@color/black"
+                  />
+
+
+          </LinearLayout>
+
+          <Button
+              android:id="@+id/btn_publish"
+              android:layout_width="match_parent"
+              android:layout_height="50dp"
+              android:background="@drawable/button_background"
+              android:text="Publish"
+              android:textColor="@color/black"
+              android:textAllCaps="false"
+              android:textStyle="bold"
+              android:layout_marginTop="30dp"
+              android:layout_marginBottom="20dp"
+              />
+
+      </LinearLayout>
+
+
+  </ScrollView>
+
+
+
+
+
+
+
+</LinearLayout>

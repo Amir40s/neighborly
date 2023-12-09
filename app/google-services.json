@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "727447532681",
+    "project_id": "neighborlly",
+    "storage_bucket": "neighborlly.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:727447532681:android:adca60bbec60f115b10258",
+        "android_client_info": {
+          "package_name": "com.technogenis.neighborlly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv4whkJL5SJLAPT1dknH4b9O4hGtjkbcE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

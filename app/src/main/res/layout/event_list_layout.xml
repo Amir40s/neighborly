@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="10dp"
+    app:cardCornerRadius="8dp"
+    android:background="@color/background"
+    android:backgroundTint="@color/background"
+    android:layout_margin="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        >
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/user"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02-dec-2023"
+            android:layout_toRightOf="@+id/profile_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:drawableStart="@drawable/ic_date"
+            android:layout_marginTop="4dp"
+            android:gravity="center|start"
+            android:drawablePadding="5dp"
+            android:layout_below="@+id/tv_name"
+            />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="02-dec-2023"
+            android:layout_toRightOf="@+id/tv_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:drawableStart="@drawable/ic_time"
+            android:layout_marginTop="4dp"
+            android:gravity="center|start"
+            android:drawablePadding="5dp"
+            android:layout_below="@+id/tv_name"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/profile_image"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/tv_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:drawableStart="@drawable/ic_location"
+            android:gravity="center|start"
+            android:drawablePadding="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_title"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/delete_image"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_delete"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            app:tint="@color/red" />
+
+        <ImageView
+            android:id="@+id/event_image"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:src="@drawable/upload"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/tv_location"
+            />
+
+        <TextView
+            android:id="@+id/tv_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="this is thw how we hahsd hahsd absdas dbashdasbv dhgasbn bsand"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:maxLines="3"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/event_image"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
