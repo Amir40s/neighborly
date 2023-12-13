@@ -40,7 +40,7 @@ class SettingFragment : Fragment() {
     }
 
     private fun deleteAccount() {
-        Log.d("TAG", "ingreso a deleteAccount")
+        Log.d("TAG", "deleteAccount")
         val firebaseAuth = FirebaseAuth.getInstance()
         val currentUser = firebaseAuth.currentUser
         currentUser!!.delete().addOnCompleteListener { task ->
@@ -54,7 +54,7 @@ class SettingFragment : Fragment() {
             loadingBar.HideDialog()
             Log.e(
                 "TAG",
-                "Ocurrio un error durante la eliminación del usuario",
+                "Something went wrong...",
                 e
             )
         }
