@@ -33,13 +33,13 @@
 
 
         <Button
-            android:id="@+id/btn_connect"
+            android:id="@+id/btn_chat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="connect"
+            android:text="Chat Now"
             android:background="@drawable/button_background"
             android:padding="10dp"
-            android:visibility="gone"
+            android:textSize="12sp"
             android:layout_gravity="center"
             android:layout_margin="10dp"
             />

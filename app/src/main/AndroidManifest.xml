@@ -19,6 +19,9 @@
         android:theme="@style/Theme.Neighborlly"
         tools:targetApi="31">
         <activity
+            android:name=".chat.ChatActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.FeedbackActivity"
             android:exported="false" />
         <activity

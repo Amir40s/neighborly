@@ -90,7 +90,7 @@
             android:layout_height="wrap_content"
             android:drawableStart="@drawable/ic_phone"
             android:textColor="@color/black"
-            android:hint="Phone Number"
+            android:hint="Phone Number with country code"
             android:drawablePadding="10dp"
             android:drawableTint="@color/gray"
             android:background="@drawable/edittext_background"

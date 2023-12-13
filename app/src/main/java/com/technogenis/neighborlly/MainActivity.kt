@@ -13,6 +13,7 @@ import com.google.firebase.ktx.Firebase
 import com.technogenis.expensior.constant.Collections
 import com.technogenis.neighborlly.databinding.ActivityMainBinding
 import com.technogenis.neighborlly.fragment.EventsFragment
+import com.technogenis.neighborlly.fragment.FAQFragment
 import com.technogenis.neighborlly.fragment.FeedsFragment
 import com.technogenis.neighborlly.fragment.HomeFragment
 import com.technogenis.neighborlly.fragment.PollsFragment
@@ -80,7 +81,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
 
             R.id.nav_faq -> supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, HomeFragment()).commit()
+                .replace(R.id.fragment_container, FAQFragment()).commit()
 
             R.id.nav_settings -> {
                 supportFragmentManager.beginTransaction()

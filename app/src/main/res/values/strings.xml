@@ -6,4 +6,17 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>
+
+    <string name="ques_1">How do I create a profile on Neighborlly?</string>
+    <string name="ques_2">Is my information visible to all neighbors by default?</string>
+    <string name="ques_3">How can I verify my address as a neighbor?</string>
+
+
+
+
+
+    <string name="ans_1">If Neighborlly has its own specific instructions for creating a profile, those will be available on their official website or within the app</string>
+    <string name="ans_2">Keep in mind that the steps might vary depending on the specific features and design of the Neighborlly platform</string>
+    <string name="ans_3">It's important to note that the specific steps and terminology can vary from one platform to another</string>
+
 </resources>
